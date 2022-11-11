@@ -1,5 +1,5 @@
 {
-    "name": "Tattoo Calendar",
-    "short_name": "Tattoo Calendar",
+    "name": "My Super App",
+    "short_name": "My App",
     "display": "standalone"
 }
