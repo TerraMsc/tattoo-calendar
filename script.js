@@ -21,11 +21,6 @@ const renderCalendar = () => {
     lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
     lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay() -1 , // getting last day of month
     lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
-    
-    
-    if(date.getDay() == 6 || date.getDay() == 0){
-        days.classList.add("weekend");
-     }
 
     let liTag = "";
     
@@ -102,4 +97,24 @@ function opacity() {
         document.getElementById("icons-wrap").style.opacity = 1;
         swt = 1;
     }
+}
+
+function four() {
+    $(".calendar").removeClass("five-lines six-lines auto");
+    $(".calendar").addClass("four-lines");
+}
+
+function five() {
+    $(".calendar").removeClass("four-lines six-lines auto");
+    $(".calendar").addClass("five-lines");
+}
+
+function six() {
+    $(".calendar").removeClass("four-lines five-lines auto");
+    $(".calendar").addClass("six-lines");
+}
+
+function auto() {
+    $(".calendar").removeClass("four-lines five-lines six-lines");
+    $(".calendar").addClass("auto");
 }
