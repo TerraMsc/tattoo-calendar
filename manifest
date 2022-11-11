@@ -1,0 +1,7 @@
+{
+    "name": "My Super App",
+    "short_name": "My App",
+    "display": "standalone",
+    "scope": "/my-app-path/",
+    "start_url": "/my-app-path/"
+}

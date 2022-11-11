@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest">
+    <link rel="manifest" href="manifest.json">
+    <title>Tattoo Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
+    <link rel="manifest" href="site.webmanifest?">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="wrap">
+
+        <div id="icons-wrap">
+        <div class="icons">
+            <span id="prev">previous</span>
+            <span id="next">next</span>
+        </div>
+        <span id="show" onclick="opacity()">show/hide</span>
+        </div>
+
+        <div class="calendar">
+            <div id="month">November</div>
+            <input id="month-pl" name="phone" placeholder="miesiąc">
+
+            <div class="weeks">
+                <div class="week-day">mon</div>
+                <div class="week-day">tue</div>
+                <div class="week-day">wed</div>
+                <div class="week-day">thu</div>
+                <div class="week-day">fri</div>
+                <div class="week-day">sat</div>
+                <div class="week-day">sun</div>
+            </div>
+
+            <div class="days-wrap">
+                <ul class="days"></ul>
+            </div>
+        </div>
+
+        <div class="studio">Poznań @slonce.kolektyw</div>
+        <div class="studio">Zielona @zagajnik.tattoo.studio</div>
+        <div class="studio">Gorzów @teriotats</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
